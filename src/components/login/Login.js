@@ -61,21 +61,22 @@ const Login = () => {
   }
   const loginClinic = async() => {
     const data = { phone: phone, password: loginPassword }
-    await moakad.post("/auth/login-clinic", { ...data }, {
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Accept': '*/*'
-      }
-    }).then((response) => {
-      if (response.data.success) {
+    navigate.push("/clinic/dashboard")
+    // await moakad.post("/auth/login-clinic", { ...data }, {
+    //   headers: {
+    //     'Content-Type': 'application/x-www-form-urlencoded',
+    //     'Accept': '*/*'
+    //   }
+    // }).then((response) => {
+    //   if (response.data.success) {
         
-        navigate.push("/clinic/dashboard")
-      } else {
-      }
+    //     navigate.push("/clinic/dashboard")
+    //   } else {
+    //   }
 
-    }).catch(err => {
-      console.log(err.message)
-    });
+    // }).catch(err => {
+    //   console.log(err.message)
+    // });
   }
   return (
     <wection className="mainlogin">
@@ -152,7 +153,7 @@ const Login = () => {
               <Link onClick={() => setForgot(false)} className='forgetpara'>Forgot password</Link>
             </div>
             <Link onClick={loginClinic} className="signinbtn">Sign in</Link>
-            <Link onClick={registerClinic} className="signupbtn">Register</Link>
+            {/* <Link onClick={registerClinic} className="signupbtn">Register</Link> */}
             
           </div>
           :
