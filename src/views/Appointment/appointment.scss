@@ -1,0 +1,257 @@
+.appointment-section{
+    .servicesupper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        .serviceshead {
+            color: var(--Base-Text, #12215C);
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 42px;
+        }
+
+        .servicesbtns {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 8px;
+
+            .sortbtn {
+                border-radius: 8px;
+                border: 1px solid var(--Blue-Base, #2652FF);
+                background: var(--Gray-50, #F9FAFB);
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                display: flex;
+                padding: 8px 16px 8px 14px;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                color: var(--Blue-Base, #2652FF);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+            }
+
+            .addbtn {
+                border-radius: 8px;
+                background: var(--Blue-Base, #2652FF);
+                display: flex;
+                padding: 8px 16px 8px 14px;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                color: var(--Base-White, #FFF);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                border: 1px solid var(--Blue-Base, #2652FF);
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+            }
+        }
+    }
+    .servicesmid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+
+        .servicesmidleft {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 8px;
+
+            .searchinputmain {
+                position: relative;
+                min-width: 414px;
+                width: 100%;
+
+                .searchinput {
+                    border-radius: 12px;
+                    border: 1px solid var(--Grey-200, #E0E0E8);
+                    background: var(--Base-White, #FFF);
+                    box-shadow: 0px 11px 23px 0px rgba(0, 0, 0, 0.02);
+                    height: 56px;
+                    width: 100%;
+                    outline: none;
+                    padding: 0px 24px;
+                    color: #000;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    padding-right: 50px;
+
+                    &::placeholder {
+                        color: var(--Base-Text, #12215C);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+
+                .searchimg {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    top: 16px;
+                    right: 24px;
+                }
+            }
+
+            .filterbtn {
+                border-radius: 12px;
+                border: 1px solid var(--Grey-200, #E0E0E8);
+                background: var(--Base-White, #FFF);
+                box-shadow: 0px 11px 23px 0px rgba(0, 0, 0, 0.02);
+                height: 56px;
+                padding: 0px 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+       
+    }
+}
+
+
+
+
+
+.rbc-event, .rbc-day-slot .rbc-background-event{
+    background-color: transparent !important;
+}
+
+.rbc-off-range-bg{
+    background: #FAFAFA !important;
+
+
+}
+
+.appointment-modal{
+    .modal-dialog{
+        max-width: 920px;
+    }
+    .modal-content{
+        border-radius: 16px;
+        background: var(--Base-White, #FFF);
+        padding: 40px;
+    }
+    .modal-body{
+        padding: 0;
+    }
+    .main-heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 32px;
+        border-bottom: 1px solid var(--Grey-200, #E0E0E8);
+        h6{
+            color: var(--Primary-Base, #235265);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 32px; 
+        }
+    }
+    .bottom-detail{
+        padding-top: 47px;
+        .upper-content{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 48px;
+            .doctor-profile{
+                width: 120px;
+                height: 120px;
+                border-radius: 10px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .content{
+                h6{
+                    color: var(--Base-Text, #12215C);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px; 
+                    margin-bottom: 8px;
+                }
+                p{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 8px;
+                    margin-bottom: 10px;
+                    span{
+                        color: var(--Blue-400, #0024B2);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; 
+                    }
+                }
+                .reviews{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 8px;
+                    .review-text{
+                        color: var(--Base-Text, #12215C);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; 
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .bottom-fields{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 18px;
+            flex-direction: column;
+            h6{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 16px;
+                color: var(--Base-Text, #12215C);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; 
+                .green-text{
+                    color: var(--Green-300, #1C9480);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; 
+                }
+                .border-line{
+                    color: #E0E0E8;
+                }
+
+            }
+        }
+    }
+}
+
+// .rbc-toolbar{
+//     display: none !important;
+// }

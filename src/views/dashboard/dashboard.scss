@@ -1,0 +1,118 @@
+.dashboard-section{
+    .upper-cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        .single-card{
+            border-radius: 16px;
+            border: 1px solid var(--Gray-200, #EAECF0);
+            background: var(--Base-White, #FFF);
+            padding: 24px;
+            flex: 0 0 24%;
+            .inner-upper{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 8px;
+                h6{
+                    color: var(--Grey-900, #595970);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px; 
+                    margin: 0;
+                }
+            }
+            .bottom-content{
+                h5{
+                    color: var(--Base-Text, #12215C);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 26px;
+                    margin: 12px 0;
+                }
+                p{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 5px;
+                    color: var(--Grey-900, #595970);
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    span{
+                        color: var(--Green-400, #034A4A);
+
+                    }
+                }
+            }
+        }
+    }
+    .twice-graph{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        height: 398px;
+        margin: 16px 0;
+        .left-graph{
+            max-width: 614px;
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid var(--Gray-200, #EAECF0);
+            background: var(--Base-White, #FFF);
+            padding: 24px;
+            height: 100%;
+        }
+        .right-graph{
+            flex: 1;
+            border-radius: 16px;
+            border: 1px solid var(--Gray-200, #EAECF0);
+            background: var(--Base-White, #FFF);
+            padding: 24px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            #chart{
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+
+.apexcharts-toolbar{
+    display: none !important;
+}
+
+
+@media (max-width:1024px){
+    .dashboard-section .upper-cards{
+        flex-direction: column;
+    }
+    .dashboard-section .upper-cards .single-card{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .dashboard-section .twice-graph{
+        flex-direction: column;
+        height: auto;
+    }
+    .dashboard-section .twice-graph .left-graph{
+        padding: 15px;
+        max-width: 100%;
+    }
+    .dashboard-section .twice-graph .right-graph{
+        flex: auto;
+        width: 100%;
+        padding: 15px;
+    }
+    .dashboard-datatable .paginationmain .mainpaginationbtn span{
+        display: none;
+    }
+}

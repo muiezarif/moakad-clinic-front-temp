@@ -1,0 +1,204 @@
+
+@import "~bootstrap/scss/bootstrap";
+@import url(https://db.onlinewebfonts.com/c/17241fb9c2ffb3ec11eba762e771435f?family=Suisse+Int%27l+Book);
+@font-face {
+  font-family: "Suisse Int'l Book";
+  src: url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.eot");
+  src: url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/17241fb9c2ffb3ec11eba762e771435f.svg#Suisse Int'l Book")format("svg");
+}
+body{
+    font-family: "Suisse Int'l Book" !important;
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed;
+}
+
+.rounded-full {
+    border-radius: 50%;
+}
+
+.ml-2x{
+    margin-left: 2px;
+  }
+  
+  .ml-6x{
+    margin-left: 6px;
+  }
+  
+
+body{
+    overflow-x: hidden;
+}
+// .btn-common-pur:hover {
+//     opacity: 0.75;
+//     color: white;
+// }
+
+
+iframe{
+    position: unset !important;
+    top: unset !important;
+    left: unset !important;
+    width: unset !important;
+    height: unset !important;
+    border: unset !important;
+    z-index: unset !important;
+}
+
+.ml-15{
+    margin-left: 15px;
+}
+
+
+.offcanvas{
+    background: #1E1E1E;
+    z-index: 99999;
+}
+.offcanvas.offcanvas-start{
+    left: unset !important;
+    right: 0;
+    transform: translateX(0) !important;
+}
+.offcanvas-backdrop.show{
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    opacity: 1;
+}
+.offcanvas-header .btn-close{
+    background-size: cover;
+    opacity: 1;
+}
+.btn-close:focus{
+    box-shadow: none !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.btn:focus, .btn.focus{
+    box-shadow: none !important;
+}
+
+.table-responsive{
+    &::-webkit-scrollbar{
+        display: none !important;
+    }
+}
+
+.offcanvas-body{
+    &::-webkit-scrollbar{
+        display: none !important;
+    }
+}
+
+.customerdetail .table-customer{
+    &::-webkit-scrollbar{
+        display: none !important;
+    }
+}
+.customer .table-customer{
+    &::-webkit-scrollbar{
+        display: none !important;
+    }
+}
+.promo .table-customer{
+    &::-webkit-scrollbar{
+        display: none !important;
+    }
+}
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl{
+    --bs-offcanvas-width: 470px !important;
+}
+
+@media (max-width:600px){
+    .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl{
+        --bs-offcanvas-width: 100% !important;
+    }
+    .padd-sm{
+        padding: 0 !important;
+    }
+    .ml-15{
+        margin-left: 0 !important;
+    }
+    
+}
+
+.container-fluid{
+    padding: 0px !important;
+}
+
+.colorwhite{
+    background-color: #FFF !important;
+    padding: 0px !important;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+  width: 36px;
+  height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E0E0E8;
+    transition: .4s;
+    border-radius: 12px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+   width: 16px;
+  height: 16px;
+    border-radius: 20px;
+    left: 2px !important;
+    bottom: 2px !important;
+   background: var(--Base-White, #FFF);
+  filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.06)) drop-shadow(0px 1px 3px rgba(16, 24, 40, 0.10));
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:#2652FF !important;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(15px) !important;
+    background-color: #fff;
+  }
